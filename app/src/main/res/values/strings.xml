@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">RoadFit</string>
+
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="forgotPassword">¿Olvidaste tu contraseña?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="resetPassword">Enviar contraseña</string>
+    <string name="invitation">¿Cuál es tu límite?</string>
+    <string name="acept">He leído y acepto los </string>
+    <string name="terms">términos y condiciones de uso </string>
+    <string name="empty_email">Ingresa tu email</string>
+    <string name="invalid_email">Correo invalido</string>
+
 </resources>
