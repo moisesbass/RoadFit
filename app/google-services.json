@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651135704303",
+    "project_id": "roadfit-240bf",
+    "storage_bucket": "roadfit-240bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651135704303:android:20318c6b821d4ddfe30f1a",
+        "android_client_info": {
+          "package_name": "com.bootcamp.roadfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651135704303-o386idtl6osp61ltu4jpa5bftejqee48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc1VxuuO57NqbOJCaBOVtdBnH8_Ows4OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651135704303-o386idtl6osp61ltu4jpa5bftejqee48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

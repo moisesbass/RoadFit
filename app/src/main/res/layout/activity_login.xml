@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/amongus" />
+
+    <TextView
+        android:id="@+id/txtInvitation"
+        style="@style/viewCustom"
+        android:layout_height="57dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/invitation"
+        android:textColor="@color/gray_dark"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/viewCustom"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="30dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/gray_dark"
+        android:textColorHint="@color/gray_dark"
+        android:backgroundTint="@color/gray_dark"/>
+
+    <EditText
+        android:id="@+id/Password"
+        style="@style/viewCustom"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/gray_dark"
+        android:textColorHint="@color/gray_dark"
+        android:backgroundTint="@color/gray_dark"/>
+
+    <TextView
+        android:id="@+id/btnLogin"
+        style="@style/viewCustom"
+        android:background="@color/green"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textAlignment="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:onClick="login"/>
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        style="@style/viewCustom"
+        android:layout_below="@id/btnLogin"
+        android:onClick="forgotPassword"
+        android:paddingTop="0dp"
+        android:gravity="center_horizontal"
+        android:text="@string/forgotPassword"
+        android:textSize="12sp"
+        android:textColor="@color/gray_dark"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/lyTerms"
+        style="@style/viewCustom"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <CheckBox
+            android:id="@+id/Acept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/acept"
+            android:textColor="@color/gray_dark"/>
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/salmon"
+            android:layout_marginLeft="5dp"
+            android:onClick="goTerms"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bntSignGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#D1CFCF"
+        android:drawableLeft="@drawable/google"
+        android:text="@string/google"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingLeft="30dp"/>
+
+    <Button
+        android:id="@+id/bntSignFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#D1CFCF"
+        android:drawableLeft="@drawable/facebook"
+        android:text="@string/facebook"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingLeft="30dp"/>
+
+</LinearLayout>
