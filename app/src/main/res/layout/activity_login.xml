@@ -60,8 +60,8 @@
         android:textStyle="bold"
         android:onClick="login"/>
 
-    <EditText
-        android:id="@+id/txtForgotPassword"
+    <TextView
+        android:id="@+id/btnForgotPassword"
         style="@style/viewCustom"
         android:layout_below="@id/btnLogin"
         android:onClick="forgotPassword"
