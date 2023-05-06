@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
     android:orientation="vertical"
     android:background="@color/white">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="match_parent"
-        android:layout_height="192dp"
+        android:layout_height="226dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/amongus" />
+        app:lottie_rawRes="@raw/bikeroute" />
+
 
     <TextView
         android:id="@+id/txtInvitation"
         style="@style/viewCustom"
-        android:layout_height="57dp"
+        android:paddingTop="23dp"
         android:gravity="center_horizontal"
-        android:paddingTop="20dp"
         android:text="@string/invitation"
-        android:textColor="@color/gray_dark"
-        android:textSize="15sp"/>
+        android:textSize="20dp"
+        android:textColor="@color/gray_dark"/>
 
     <EditText
         android:id="@+id/etEmail"
@@ -38,7 +36,7 @@
         android:backgroundTint="@color/gray_dark"/>
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/etPassword"
         style="@style/viewCustom"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -47,7 +45,7 @@
         android:backgroundTint="@color/gray_dark"/>
 
     <TextView
-        android:id="@+id/btnLogin"
+        android:id="@+id/tvLogin"
         style="@style/viewCustom"
         android:background="@color/green"
         android:layout_height="wrap_content"
@@ -56,21 +54,19 @@
         android:paddingBottom="7dp"
         android:textAlignment="center"
         android:text="@string/login"
-        android:textColor="@color/white"
+        android:textColor="@color/gray_dark"
         android:textStyle="bold"
         android:onClick="login"/>
 
     <TextView
-        android:id="@+id/btnForgotPassword"
+        android:id="@+id/txtForgotPassword"
         style="@style/viewCustom"
-        android:layout_below="@id/btnLogin"
         android:onClick="forgotPassword"
         android:paddingTop="0dp"
         android:gravity="center_horizontal"
         android:text="@string/forgotPassword"
         android:textSize="12sp"
-        android:textColor="@color/gray_dark"
-        android:backgroundTint="@color/white"/>
+        android:textColor="@color/gray_dark"/>
 
     <LinearLayout
         android:id="@+id/lyTerms"
@@ -78,10 +74,11 @@
         android:orientation="horizontal"
         android:background="@color/white">
         <CheckBox
-            android:id="@+id/Acept"
+            android:id="@+id/cbAcept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textSize="10sp"
             android:text="@string/acept"
             android:textColor="@color/gray_dark"/>
         <TextView
@@ -89,16 +86,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/terms"
-            android:textSize="12sp"
-            android:textStyle="bold"
+            android:textSize="10sp"
             android:textColor="@color/salmon"
+            android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:onClick="goTerms"/>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/bntSignGoogle"
+        android:id="@+id/btSignGoogle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -112,7 +109,7 @@
         android:paddingLeft="30dp"/>
 
     <Button
-        android:id="@+id/bntSignFacebook"
+        android:id="@+id/btSignFacebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -124,5 +121,4 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:paddingLeft="30dp"/>
-
 </LinearLayout>

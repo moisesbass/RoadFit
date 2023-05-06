@@ -5,13 +5,16 @@
     <string name="password">Contraseña</string>
     <string name="forgotPassword">¿Olvidaste tu contraseña?</string>
     <string name="login">Iniciar sesión</string>
-    <string name="google">Google</string>
-    <string name="facebook">Facebook</string>
+    <string name="google">Acceder con Google</string>
+    <string name="facebook">Acceder con Facebook</string>
     <string name="resetPassword">Enviar contraseña</string>
-    <string name="invitation">¿Cuál es tu límite?</string>
+    <string name="invitation">Sigue tu ruta</string>
     <string name="acept">He leído y acepto los </string>
     <string name="terms">términos y condiciones de uso </string>
     <string name="empty_email">Ingresa tu email</string>
     <string name="invalid_email">Correo invalido</string>
+    <string name="bar_title_terms">Términos y Condiciones de Uso</string>
+    <string name="terms1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus convallis metus at pretium. Vivamus at lacinia leo. Praesent velit elit, suscipit sit amet pulvinar id, imperdiet ac massa. Quisque molestie lectus rhoncus urna tempor, ut lacinia mi tempor. Praesent volutpat, ligula eget lobortis cursus, mauris libero consequat ligula, nec scelerisque erat ipsum tempor justo. Aliquam ornare faucibus augue vel faucibus. Ut sollicitudin commodo tortor eu faucibus. Vestibulum lacinia ligula sed tortor auctor, vitae sollicitudin lorem dapibus. Phasellus sed tincidunt odio.</string>
+
 
 </resources>
