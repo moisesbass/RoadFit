@@ -2,7 +2,6 @@ package com.bootcamp.roadfit
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
-
 class ValidateEmail {
     companion object{
         var pat: Pattern?= null

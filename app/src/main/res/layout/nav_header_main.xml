@@ -36,7 +36,7 @@
                     android:id="@+id/tvNumberLevelRunning"
                     android:layout_width="117dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/level"
+                    android:text="level"
                     android:textAlignment="textEnd"
                     android:background="@color/salmon_dark"
                     android:textColor="@color/white"
@@ -93,6 +93,7 @@
                 android:orientation="vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_gravity="top|center">
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvLevelRunning"
                     android:layout_width="110dp"
@@ -100,6 +101,7 @@
                     app:cardCornerRadius="55dp"
                     android:background="@color/white"
                     android:layout_margin="0dp">
+
                     <me.tankery.lib.circularseekbar.CircularSeekBar
                         android:id="@+id/csbDistanceRunning"
                         android:layout_width="110dp"
@@ -120,6 +122,7 @@
                         app:cs_pointer_stroke_width="8dp"
                         app:cs_progress="30"
                         app:cs_start_angle="180" />
+
                     <me.tankery.lib.circularseekbar.CircularSeekBar
                         android:id="@+id/csbRunsRunning"
                         android:layout_width="110dp"

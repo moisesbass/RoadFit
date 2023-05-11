@@ -1,4 +1,5 @@
 package com.bootcamp.roadfit
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.properties.Delegates
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -141,11 +143,10 @@ class LoginActivity : AppCompatActivity() {
         if (!TextUtils.isEmpty(e)){
             mAuth.sendPasswordResetEmail(e)
                 .addOnCompleteListener { task ->
-                    if (task.isSuccessful) Toast.makeText(this, "Email enviado a $e", Toast.LENGTH_SHORT).show()
-                    else Toast.makeText(this, "No se encontró al usuario, intenta nuevamente ", Toast.LENGTH_SHORT).show()
+                    if (task.isSuccessful) Toast.makeText(this, "Email Enviado a $e", Toast.LENGTH_SHORT).show()
+                    else Toast.makeText(this, "No se encontró el usuario con este correo", Toast.LENGTH_SHORT).show()
                 }
         }
-        else Toast.makeText(this, "Ingresa un email", Toast.LENGTH_SHORT).show()
+        else Toast.makeText(this, "Indica un email", Toast.LENGTH_SHORT).show()
     }
 }
-
